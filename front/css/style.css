@@ -1,0 +1,152 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	color: #252525;
+}
+/* Registration form*/
+.app-main {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	min-height: 800px;
+	border: 1px solid black;
+	background-image: url("../1.png");
+}
+
+
+#reg-username, #reg-password, #reg-password-re, #login-username, #login-password {
+	max-width: 230px;
+}
+
+
+#reg-Btn {
+	align-items: center;
+	margin-top: 20px;
+	width: 150px;
+	height: 44px;
+	background-color: #e60f1d;
+	color: #fff;
+	font-size: 400;
+	bottom: 0;
+	cursor: pointer;
+	transition: 0.2s all;
+}
+
+#reg-Btn:hover {
+	background-color: #f06770;
+}
+
+.jwt-modal__box h3 {
+	text-align: center;
+	color: #fff;
+	padding-top: 20px;
+}
+
+.reg-form {
+	display: flex;
+	justify-content: center;
+}
+
+
+/* Modal window */
+
+.jwt-modal {
+	position: relative;
+	left: 0;
+	top: 500px;
+	width: 25vh;
+	height: 25vh;
+	z-index: 99998;
+
+	background-color: rgba(16, 21, 178, 0);
+	/* background-color: rgba(0, 0, 0, 0.2); */
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.jwt-modal__box {
+	max-width: 300px;
+	min-height: 360px;
+	padding: 10px;
+	margin: 10px;
+	/* background-color: rgba(17, 93, 10, 0.4); */
+	background-color: rgba(11, 29, 104, 0.6);
+}
+
+.jwt-modal__box h5{
+	text-align: center;
+	margin: 10px;
+}
+
+.jwt-modal.open {
+	visibility: visible;
+	opacity: 1;
+}
+
+.jwt-modal.open .modal__box {
+	transform: scale(1);
+}
+
+.dis-l {
+	display: none;
+}
+
+.on-dis-l {
+	display: block;
+}
+
+.jwt-modal__box-click {
+	max-width: 300px;
+	min-height: 180px;
+	padding: 10px;
+	margin: 10px;
+	/* background-color: rgba(17, 93, 10, 0.4); */
+	background-color: rgba(11, 29, 104, 0.6);
+}
+
+.jwt-modal__box-click h5{
+	text-align: center;
+	margin: 10px;
+}
+
+.reg-Btn-click {
+	align-items: center;
+	margin-top: 25px;
+	width: 150px;
+	height: 70px;
+	background-color: #e60f1d;
+	color: #fff;
+	font-size: 400;
+	bottom: 0;
+	cursor: pointer;
+	transition: 0.2s all;
+	opacity: 0.6s;
+}
+
+.reg-Btn-click:hover {
+	transition: 0.2s all;
+	opacity: 1;
+	border: 1px #99ccff solid;
+	/* background-color: #f06770; */
+}
+
+.reg-Btn-click:active {
+	background-color: #a4353d;
+	border: 1px #000000 solid;
+}
+
+

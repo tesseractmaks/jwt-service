@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
+	CREATE USER jwt WITH PASSWORD $POSTGRES_PASSWORD;
+	CREATE DATABASE test_jwt_db;
+	GRANT ALL PRIVILEGES ON DATABASE jwt TO test_jwt_db;
+EOSQL
+
